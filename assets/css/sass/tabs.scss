@@ -1,0 +1,72 @@
+/*
+I know that there is some redundacy in these styles.
+This is becauuse I wanted to treat these tabs as being a reusable element for pages.
+*/
+
+$tabsBorder: 1px solid #ccc;
+$grey: #f5f5f5;
+
+ul.tabPanels{
+  font-weight: normal;
+  font-size: 18px;
+  width: 100%;
+  margin: 30px 0 10px 0;
+  padding-left: 0;
+
+  > li {
+    position: relative;
+    top: 11px;
+    float: left;
+    border-right: $tabsBorder;
+    border-top: $tabsBorder;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0;
+    background-color: #ddebe1;
+
+    a {
+      display: block;
+      margin-top: 6px;
+      color: #328fc2;
+
+      &:hover {
+        color: #1c264a;
+      }
+    }
+
+    &.active {
+      top: 1px;
+      border-bottom: 1px solid $grey;
+      border-left: $tabsBorder;
+      height: 45px;
+      background-color: $grey;
+
+      a {
+        margin-top: 16px;
+        color: #505050;
+
+        &:hover {
+          cursor: default;
+          color: #505050;
+        }
+      }
+    }
+
+    &:first-child {
+      border-left: none;
+      border-right: none;
+
+      &.active {
+        border-right: $tabsBorder;
+      }
+    }
+  }
+}
+
+.tabPanel {
+  border-top: $tabsBorder;
+  clear: both;
+  background-color: $grey;
+  padding: 25px 15px;
+  display: none;
+}

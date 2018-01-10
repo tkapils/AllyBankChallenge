@@ -1,0 +1,128 @@
+#page.company {
+  p, li, th, td, h2 {
+    font-weight: $normal;
+  }
+
+  #bankOverview > h2, blockquote h4 {
+    color: $purple;
+  }
+
+  strong, blockquote h4 {
+    font-size: 1.143em;
+  }
+
+  #bankOverview {
+    > h2 {
+      margin-top: 0;
+      font-size: 2.571em;
+      font-weight: $thin;
+    }
+
+    blockquote {
+      margin: 35px 0;
+
+
+      img.mobile-device {
+        position: relative;
+        right: 35px;
+        top: -110px;
+        float: right;
+      }
+
+      > div {
+        background-color: #bbd8c4;
+        padding: 10px 15px;
+      }
+
+      h4 {
+        margin: 0;
+        font-weight: bold;
+      }
+
+      p {
+        margin: 5px 0 0 0;
+        width: 550px;
+      }
+    }
+
+    ul.reasons {
+      margin-left: 0;
+      padding-left: 0;
+      li {
+        margin-bottom: 5px;
+        &::before{
+          content:"•";
+          font-size:10pt;
+          margin-right: 8px;
+        }
+
+        &:last-child {
+          margin-bottom: 0;
+        }
+      }
+    }
+
+  }
+
+  #rates {
+    margin-top: 60px;
+    > h2 {
+      font-size: 2em;
+      font-weight: $normal;
+      span {
+        padding: 10px 15px 10px 0;
+        margin-right: 10;
+        font-weight: $thin;
+        border-right: 1px solid #505050;
+      }
+    }
+
+    table {
+      margin-top: 30px;
+      width: 100%;
+      border-collapse: collapse;
+      .bankName {
+        text-align: left;
+        width: 250px;
+      }
+
+      .apy, .earnings {
+        text-align: right;
+        width: 225px;
+      }
+    }
+
+
+    th, tfoot td {
+      font-weight: $thin;
+      font-size: .857em;
+      text-align: right;
+    }
+
+    th {
+      padding-bottom: 10px;
+    }
+
+    tfoot td {
+      padding-top: 10px;
+    }
+
+    tbody {
+      td {
+        font-size: 1.143em;
+        padding: 10px;
+        background-color: #e3f1e7;
+      }
+
+      tr:nth-child(even) > td {
+        background-color: #c7e0d7;
+      }
+
+      tr.urbank > td {
+        font-size: 1.286em;
+        font-weight: $bold;
+      }
+    }
+  }
+
+}

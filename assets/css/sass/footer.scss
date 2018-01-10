@@ -1,0 +1,55 @@
+#page {
+  min-height: 100%;
+  margin-bottom: -$footer;
+
+  &:after {
+    content: "";
+    display: block;
+  }
+}
+
+.site-footer, #page:after {
+  height: $footer;
+}
+
+footer {
+  background-color: $grey;
+  color: $blue;
+  padding-top: 20px;
+
+  .urbank {
+    margin: 3px 0;
+    float: left;
+    width: 465px;
+  }
+
+  ul.footnerNav {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+
+    > li {
+      float: left;
+      &.current {
+        font-weight: $bold;
+        > a:hover {
+          cursor: default;
+          color: $blue;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 0 25px;
+
+        &:hover {
+          color: $darkblue;
+        }
+      }
+
+      &:last-child a {
+        padding-right: 0;
+      }
+    }
+  }
+}

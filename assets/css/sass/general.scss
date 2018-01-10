@@ -1,0 +1,49 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: $base;
+  color: #505050;
+  width: 100%;
+  margin: 0;
+}
+
+a {
+  color: $blue;
+  border: none;
+  text-decoration: none;
+  &:hover {
+    color: #72e9da;
+  }
+}
+
+blockquote {
+  border: none;
+  padding: 0;
+}
+
+#page > .contentWrapper {
+  overflow: auto;
+  margin-top: 63px;
+}
+
+.contentWrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: $main;
+}
+
+.mainContent, .sidebar {
+  float: left;
+}
+
+.mainContent {
+  width: 700px;
+  padding-bottom: 80px;
+}
+
+ul {
+  list-style-type: none;
+}

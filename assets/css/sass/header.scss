@@ -1,0 +1,59 @@
+$height: 45px;
+
+header {
+  color: #fff;
+  background-color: $blue;
+  height: $height;
+
+
+  .urbank-logo {
+    margin: 3px 0;
+    float: left;
+    width: 465px;
+    height: 37px;
+    padding-top: 4px;
+    background-image: url("/assets/img/urbank-dark.png");
+    background-repeat: no-repeat;
+
+    &:hover {
+      background-image: url("/assets/img/urbank.png");
+    }
+  }
+
+  a {
+    color: #fff;
+  }
+
+  ul {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    height: $height;
+    > li {
+      float: left;
+      height: $height;
+      &.current {
+        background-color: #006899;
+        font-weight: $bold;
+        > a:hover {
+          cursor: default;
+          color: #fff;
+        }
+      }
+
+      a {
+        display: block;
+        padding: 13px 25px;
+
+        &:hover {
+          color: $darkblue;
+        }
+      }
+
+      &:last-child a {
+        padding-right: 0;
+      }
+    }
+  }
+
+}

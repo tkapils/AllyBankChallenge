@@ -1,0 +1,320 @@
+@charset "UTF-8";
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,300,700");
+html, body {
+  height: 100%; }
+
+body {
+  font-family: 'Roboto', sans-serif;
+  font-size: 14px;
+  color: #505050;
+  width: 100%;
+  margin: 0; }
+
+a {
+  color: #328fc2;
+  border: none;
+  text-decoration: none; }
+  a:hover {
+    color: #72e9da; }
+
+blockquote {
+  border: none;
+  padding: 0; }
+
+#page > .contentWrapper {
+  overflow: auto;
+  margin-top: 63px; }
+
+.contentWrapper {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 945px; }
+
+.mainContent, .sidebar {
+  float: left; }
+
+.mainContent {
+  width: 700px;
+  padding-bottom: 80px; }
+
+ul {
+  list-style-type: none; }
+
+#page.company p, #page.company li, #page.company th, #page.company td, #page.company h2 {
+  font-weight: 400; }
+#page.company #bankOverview > h2, #page.company blockquote h4 {
+  color: #650360; }
+#page.company strong, #page.company blockquote h4 {
+  font-size: 1.143em; }
+#page.company #bankOverview > h2 {
+  margin-top: 0;
+  font-size: 2.571em;
+  font-weight: 300; }
+#page.company #bankOverview blockquote {
+  margin: 35px 0; }
+  #page.company #bankOverview blockquote img.mobile-device {
+    position: relative;
+    right: 35px;
+    top: -110px;
+    float: right; }
+  #page.company #bankOverview blockquote > div {
+    background-color: #bbd8c4;
+    padding: 10px 15px; }
+  #page.company #bankOverview blockquote h4 {
+    margin: 0;
+    font-weight: bold; }
+  #page.company #bankOverview blockquote p {
+    margin: 5px 0 0 0;
+    width: 550px; }
+#page.company #bankOverview ul.reasons {
+  margin-left: 0;
+  padding-left: 0; }
+  #page.company #bankOverview ul.reasons li {
+    margin-bottom: 5px; }
+    #page.company #bankOverview ul.reasons li::before {
+      content: "•";
+      font-size: 10pt;
+      margin-right: 8px; }
+    #page.company #bankOverview ul.reasons li:last-child {
+      margin-bottom: 0; }
+#page.company #rates {
+  margin-top: 60px; }
+  #page.company #rates > h2 {
+    font-size: 2em;
+    font-weight: 400; }
+    #page.company #rates > h2 span {
+      padding: 10px 15px 10px 0;
+      margin-right: 10;
+      font-weight: 300;
+      border-right: 1px solid #505050; }
+  #page.company #rates table {
+    margin-top: 30px;
+    width: 100%;
+    border-collapse: collapse; }
+    #page.company #rates table .bankName {
+      text-align: left;
+      width: 250px; }
+    #page.company #rates table .apy, #page.company #rates table .earnings {
+      text-align: right;
+      width: 225px; }
+  #page.company #rates th, #page.company #rates tfoot td {
+    font-weight: 300;
+    font-size: .857em;
+    text-align: right; }
+  #page.company #rates th {
+    padding-bottom: 10px; }
+  #page.company #rates tfoot td {
+    padding-top: 10px; }
+  #page.company #rates tbody td {
+    font-size: 1.143em;
+    padding: 10px;
+    background-color: #e3f1e7; }
+  #page.company #rates tbody tr:nth-child(even) > td {
+    background-color: #c7e0d7; }
+  #page.company #rates tbody tr.urbank > td {
+    font-size: 1.286em;
+    font-weight: 700; }
+
+section.sidebar {
+  width: 220px;
+  margin-left: 25px;
+  margin-top: 10px; }
+  section.sidebar .login {
+    display: block;
+    padding: 5px 0;
+    text-align: center;
+    font-size: 1.286em;
+    font-weight: 700;
+    background-color: #650360;
+    color: #fff; }
+  section.sidebar #login {
+    width: 135px;
+    float: right;
+    margin-right: 35px;
+    margin-top: 5px; }
+  section.sidebar #loginDisplay {
+    width: 100%; }
+  section.sidebar #news article > h4 {
+    font-size: 1.143em;
+    margin: 0;
+    font-weight: 700; }
+  section.sidebar #news article p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    line-height: 1.5; }
+  section.sidebar #archive article {
+    margin-bottom: 12px; }
+    section.sidebar #archive article a {
+      font-size: 1.143em;
+      font-weight: 700; }
+  section.sidebar .modalWindow {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.7); }
+    section.sidebar .modalWindow div {
+      position: relative;
+      margin: 10% auto;
+      height: 235px;
+      width: 415px;
+      background-color: #fff;
+      opacity: 1;
+      z-index: 99;
+      padding: 25px 0 0 35px; }
+      section.sidebar .modalWindow div h1 {
+        font-size: 2em;
+        font-weight: 300;
+        margin: 0; }
+      section.sidebar .modalWindow div form {
+        margin-top: 35px; }
+        section.sidebar .modalWindow div form p {
+          margin-top: 25px; }
+        section.sidebar .modalWindow div form label {
+          font-weight: 700;
+          display: block;
+          float: left;
+          text-align: right;
+          width: 60px;
+          margin: 10px 20px 0 0; }
+        section.sidebar .modalWindow div form input {
+          width: 300px;
+          height: 35px;
+          border: 1px solid #328fc2; }
+      section.sidebar .modalWindow div .modalClose {
+        position: absolute;
+        right: 15px;
+        top: 10px;
+        cursor: pointer; }
+
+header {
+  color: #fff;
+  background-color: #328fc2;
+  height: 45px; }
+  header .urbank-logo {
+    margin: 3px 0;
+    float: left;
+    width: 465px;
+    height: 37px;
+    padding-top: 4px;
+    background-image: url("/assets/img/urbank-dark.png");
+    background-repeat: no-repeat; }
+    header .urbank-logo:hover {
+      background-image: url("/assets/img/urbank.png"); }
+  header a {
+    color: #fff; }
+  header ul {
+    float: left;
+    margin: 0;
+    padding-left: 0;
+    height: 45px; }
+    header ul > li {
+      float: left;
+      height: 45px; }
+      header ul > li.current {
+        background-color: #006899;
+        font-weight: 700; }
+        header ul > li.current > a:hover {
+          cursor: default;
+          color: #fff; }
+      header ul > li a {
+        display: block;
+        padding: 13px 25px; }
+        header ul > li a:hover {
+          color: #1c264a; }
+      header ul > li:last-child a {
+        padding-right: 0; }
+
+#page {
+  min-height: 100%;
+  margin-bottom: -95px; }
+  #page:after {
+    content: "";
+    display: block; }
+
+.site-footer, #page:after {
+  height: 95px; }
+
+footer {
+  background-color: #e7e8e9;
+  color: #328fc2;
+  padding-top: 20px; }
+  footer .urbank {
+    margin: 3px 0;
+    float: left;
+    width: 465px; }
+  footer ul.footnerNav {
+    float: left;
+    margin: 0;
+    padding-left: 0; }
+    footer ul.footnerNav > li {
+      float: left; }
+      footer ul.footnerNav > li.current {
+        font-weight: 700; }
+        footer ul.footnerNav > li.current > a:hover {
+          cursor: default;
+          color: #328fc2; }
+      footer ul.footnerNav > li a {
+        display: block;
+        padding: 0 25px; }
+        footer ul.footnerNav > li a:hover {
+          color: #1c264a; }
+      footer ul.footnerNav > li:last-child a {
+        padding-right: 0; }
+
+/*
+I know that there is some redundacy in these styles.
+This is becauuse I wanted to treat these tabs as being a reusable element for pages.
+*/
+ul.tabPanels {
+  font-weight: normal;
+  font-size: 18px;
+  width: 100%;
+  margin: 30px 0 10px 0;
+  padding-left: 0; }
+  ul.tabPanels > li {
+    position: relative;
+    top: 11px;
+    float: left;
+    border-right: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    height: 35px;
+    padding: 0 15px;
+    margin: 0;
+    background-color: #ddebe1; }
+    ul.tabPanels > li a {
+      display: block;
+      margin-top: 6px;
+      color: #328fc2; }
+      ul.tabPanels > li a:hover {
+        color: #1c264a; }
+    ul.tabPanels > li.active {
+      top: 1px;
+      border-bottom: 1px solid #f5f5f5;
+      border-left: 1px solid #ccc;
+      height: 45px;
+      background-color: #f5f5f5; }
+      ul.tabPanels > li.active a {
+        margin-top: 16px;
+        color: #505050; }
+        ul.tabPanels > li.active a:hover {
+          cursor: default;
+          color: #505050; }
+    ul.tabPanels > li:first-child {
+      border-left: none;
+      border-right: none; }
+      ul.tabPanels > li:first-child.active {
+        border-right: 1px solid #ccc; }
+
+.tabPanel {
+  border-top: 1px solid #ccc;
+  clear: both;
+  background-color: #f5f5f5;
+  padding: 25px 15px;
+  display: none; }
+
+/*# sourceMappingURL=styles.css.map */
